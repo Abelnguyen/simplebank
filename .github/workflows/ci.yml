@@ -42,7 +42,7 @@ jobs:
       run: |
         curl -L https://github.com/golang-migrate/migrate/releases/download/v4.16.2/migrate.linux-amd64.tar.gz | tar xvz
                 https://github.com/golang-migrate/migrate/releases/download/v4.16.2/migrate.linux-amd64.tar.gz
-        sudo mv migrate /usr/bin/migrate
+        sudo mv migrate /home/runner/work/_temp/migrate
         which migrate
 
     - name: Run migrations
